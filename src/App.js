@@ -1,24 +1,24 @@
-import { Home } from './Home';
-import { Months } from './Months';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Home } from "./Home";
+import MonthDetail from "./MonthDetail";
+import { Months } from "./Months";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
     <Router>
-
-      <div className="App ">
+      <div className="App">
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/months">
+            <Months />
+          </Route>
+          <Route exact path="/months/:id">
+            <MonthDetail />
+          </Route>
+        </Switch>
       </div>
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route exact path = "/months">
-          <Months />
-        </Route>
-        <Route exact path = "/months/:id">
-          <div>Stay tuned</div>
-        </Route>
-      </Switch>
     </Router>
   );
 }
