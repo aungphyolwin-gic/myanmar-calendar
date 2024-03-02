@@ -17,13 +17,18 @@ const MonthDetail = () => {
                         <div className="row mb-3 justify-content-center">
                             <Link to='/months' className="btn btn-outline-secondary">Back</Link>
                         </div>
-                        <div className="row row-cols-md-2">
-                            <div className="col">
-                                <div className="card img-fluid mb-2">
-                                    <img src={require(`./img/month${id}.jpg`)} alt="monthly festival image" />
+                       <div className="row ">
+                            <div className="col-12">
+                                <div className="row">
+                                    <div className="col-md-6">
+                                        <div className="card img-fluid mb-2">
+                                            <img src={require(`./img/month${id}.jpg`)} 
+                                                alt="monthly festivals" />
+                                        </div>
+                                        {month.Description}</div>
+                                    <div className="col-md-6">{month.Detail}</div>
                                 </div>
-                                {month.Description}</div>
-                            <div className="col">{month.Detail}</div>
+                            </div>
                         </div>
 
                     </div>)
