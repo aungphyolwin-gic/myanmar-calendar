@@ -15,7 +15,7 @@ const MonthDetail = () => {
                         <div className="row mb-3"><h1>{`${month.MonthMm} (${month.MonthEn})`}</h1></div>
                         <div className="row mb-3"><h2>{`${month.FestivalMm} (${month.FestivalEn})`}</h2></div>
                         <div className="row mb-3 justify-content-center">
-                            <Link to='/months' className="btn btn-outline-secondary">Back</Link>
+                            <Link to='/months' className="btn btn-outline-secondary col-auto">Back</Link>
                         </div>
                        <div className="row ">
                             <div className="col-12">
