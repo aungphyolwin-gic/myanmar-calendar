@@ -15,15 +15,12 @@ export const Months = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth > 959) {
+      if (window.innerWidth > 991) {
         setmonthCount(4);
       } 
-      else if (window.innerWidth >759) {
-        setmonthCount(3);
-      } 
-      else if (window.innerWidth > 559) {
+      else if (window.innerWidth >767) {
         setmonthCount(2);
-      }
+      } 
       else {
         setmonthCount(1);
       }
