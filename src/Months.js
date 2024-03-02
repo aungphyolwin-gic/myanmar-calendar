@@ -44,12 +44,12 @@ export const Months = () => {
     <>
       <div className="month-session bg-black text-white">
         <div className="container mt-5 ">
-          <div className="d-flex row-cols-2 lh-lg justify-content-between mb-3 ">
-            <div className="col fs-1 text-decoration-none text-white">
+          <div className="row row-cols-2 lh-lg justify-content-between mb-3 ">
+            <div className="col-auto fs-1 text-decoration-none text-white">
               <Link to='/' className='text-white'><IoMdArrowBack /></Link>
             </div>
             <div className="col-auto">
-              <h2 className="d-inline-flex bg-white text-black h1 p-3">
+              <h2 className="bg-white text-black h1 p-3">
                 မြန်မာလ အသေးစိတ်များ
               </h2>
             </div>
@@ -64,7 +64,7 @@ export const Months = () => {
               <Carousel>
                 {slideIndices.map((slideIndex) => (
                   <Carousel.Item key={slideIndex}>
-                      <div className="row row-cols-lg-4  row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center align-items-stretch ">
+                      <div className="row row-cols-lg-4  row-cols-md-2 row-cols-1 justify-content-center align-items-stretch ">
                     {months
                       .slice(slideIndex * monthCount, slideIndex * monthCount + monthCount)
                       .map((month) => (
